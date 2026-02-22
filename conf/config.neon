@@ -108,6 +108,7 @@ parameters:
 	tips:
 		discoveringSymbols: true
 		treatPhpDocTypesAsCertain: true
+		possiblyImpure: true
 	tipsOfTheDay: true
 	reportMagicMethods: false
 	reportMagicProperties: false
