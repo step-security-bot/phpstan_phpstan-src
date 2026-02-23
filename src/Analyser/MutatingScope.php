@@ -1050,6 +1050,10 @@ class MutatingScope implements Scope, NodeCallbackInvoker
 			$parts[] = sprintf(',%s', $parameter->getType()->describe(VerbosityLevel::cache()));
 		}
 
+		if ($this->nativeTypesPromoted) {
+			$parts[] = '::native';
+		}
+
 		return md5(implode("\n", $parts));
 	}
 
